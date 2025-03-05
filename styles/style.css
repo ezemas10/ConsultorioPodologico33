@@ -28,59 +28,9 @@ header li {
     margin-right: 5px;
 }
 
-/* 
-
-header{
-    border-bottom: 1px solid grey;
-    margin-top: 15px;
-    margin-bottom: 35px;
-    padding-bottom: 5px;
-}
-
-
-.navegacion {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 40px;
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
-.linksnav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: right;
-    gap: 50px;
-    margin-left: 30px;
-} 
-
-header figure{
-    display: flex;
-    justify-content: center;
-} 
-
-header a{
-    text-decoration: none;
-    color: lightseagreen;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: "roboto", sans-serif;
-}
-
-header a:hover{
-    color: lightblue;
-    text-decoration: underline;
-} */
-
-/*  ---SIN USO
-    a:visited{
-    color:  #797474;
-} ---- SIN USO  */
-
 
 /* ESTILADO NAV BOOTSTRAP */
+
 
 .navbar-estilopropio{
     background-color: white;
@@ -89,7 +39,7 @@ header a:hover{
     padding-bottom: 15px;
 }
 
-.navbar a{
+.navbar-estilopropio a{
         text-decoration: none;
         color: lightseagreen;
         font-size: 16px;
@@ -98,31 +48,30 @@ header a:hover{
 
 }
 
-.navbar a:hover{
+.navbar-estilopropio a:hover{
     color: lightblue;
     text-decoration: underline;
 }
 
-.navbar-toggler{
+.navbar-buttonpropio{
     --bs-navbar-toggler-focus-width: 0rem;
 }
 
-.navbar-collapse {
+.navbar-collapse-propia{
     display: flex;
     justify-content: flex-end;
 }
 
-.navbar-nav{
+.navegacionpropia{
     gap: 10px;
 }
 
-.nav-link:focus, .nav-link:hover {
+.links-propios:focus, .links-propios:hover {
     color: lightseagreen;
   }
 
 
 /* ESTILADO NAV BOOTSTRAP */
-
 
 
             /* HEADER */
@@ -136,7 +85,7 @@ main{
 }
 
 
-            /* TITULOS */
+            /* TITULOS Y CONTENEDORES */
 
 
 .logo-titulo{
@@ -169,9 +118,15 @@ main{
     margin: 0 auto 0 auto;
 }
 
+.content-box{
+    box-shadow: 0 5px 10px lightslategray;
+    border-radius: 10px;
+    padding: 15px;
+}
 
 
-            /* TITULOS */
+
+            /* TITULOS Y CONTENEDORES */
 
             /* GRID INDEX  */
 
@@ -217,6 +172,7 @@ main{
 
 
             /* GRID INDEX  */
+
 
             /* GRID SOMOS  */
 
@@ -292,12 +248,23 @@ main{
     flex-direction: column;
 }
 
+.contenido-contact p {
+
+    text-align: center;
+
+}
+
+.contenido-contact div a:hover {
+
+    outline: 2px solid lightseagreen;
+
+}
+
 .contenido-contact article{
     
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 0;
 }
 
 .contenido-contact h3{
@@ -317,6 +284,53 @@ main{
 .special{ 
     font-size: 30px;
     color:darkcyan
+}
+
+.form-estilopropio{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.label-estilopropio{
+    font-size: 1rem;
+}
+
+.label-estilopropio:focus{
+    box-shadow: 0 0 0 .25rem lightblue;
+}
+
+.formulario-content{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 5px 10px lightslategray;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.formulario-content h3{
+
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.button-propio{
+
+    margin-top: 20px;
+    display: inline-block;
+    background-color: lightblue;
+    border-color: lightblue;
+
+}
+
+.button-propio:hover{
+
+    background-color: lightcyan;
+
 }
 
             /* CONTACT */
@@ -362,8 +376,12 @@ main{
 .content-service{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     gap: 30px;
+}
+
+.content-service article{
+    margin-top: 30px;
 }
 
 .content-service pagos{
@@ -389,21 +407,18 @@ main{
 }
 
 .patologias h3{
-
     text-align: left;
-    margin-top: 20px;
-
+    padding-bottom: 20px;
 }
 
 .pagos h3{
     text-align: center;
-    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .precios h3{
-
     text-align: right;
-    margin-top: 20px;
+    padding-bottom: 20px;
 
 }
 
@@ -431,6 +446,10 @@ main{
     margin: 10px;
     font-family: "roboto", sans-serif;
     
+}
+
+.articulos {
+    margin-top: 50px;
 }
             
 .articulos h3{
@@ -575,8 +594,6 @@ footer p {
 
     header{
 
-        /* padding-bottom: 15px; */
-
         a{
             font-size: 15px;
         }
@@ -678,7 +695,6 @@ footer p {
         }
 
     }
-
     
 }
 
@@ -686,8 +702,6 @@ footer p {
 @media (max-width: 600px) {
     
     header{
-
-        /* padding-bottom: 15px; */
 
         a{
             font-size: 10px;
@@ -808,6 +822,18 @@ footer p {
         
         .precios li{
             text-align: center;
+        }
+
+        .label-estilopropio{
+            font-size: 0.80rem;
+        }
+
+        .button-propio{
+            font-size: 0.80rem;
+        }
+
+        p{
+            font-size: 15px;
         }
 
     }
