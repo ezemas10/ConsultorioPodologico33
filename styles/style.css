@@ -830,15 +830,6 @@ footer p {
             text-align: center;
         }
 
-        .contenido {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-                "content-title" 
-                "content-ul"
-                "imagen-main";
-        }
-
         .contenido-somos {
             display: grid;
             grid-template-columns: 1fr;
@@ -872,6 +863,32 @@ footer p {
         }
 
         .img3-somos{
+            justify-content: center;
+        }
+
+        .contenido-next {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                "texto1-next" 
+                "img1-next"
+                "texto2-next"
+                "img2-next";
+        }
+
+        .texto1-next{
+            text-align: left;
+        }
+        
+        .texto2-next{
+            text-align: left;
+        }
+
+        .img1-next{
+            justify-content: center;
+        }
+
+        .img2-next{
             justify-content: center;
         }
 
