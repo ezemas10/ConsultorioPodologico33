@@ -509,7 +509,7 @@ main{
 }
 
 .articulos {
-    margin-top: 100px;
+    margin-top: 50px;
 }
             
 .articulos h3{
@@ -571,7 +571,7 @@ h2 {
     font-weight: bold;
     font-family: "roboto", sans-serif;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -771,11 +771,11 @@ footer p {
         }
 
         h5{
-            font-size: 15px;
+            font-size: 20px;
         }
 
         p{
-            font-size: 10px;
+            font-size: 15px;
         }
 
         .content-service{
@@ -1052,7 +1052,7 @@ footer p {
     body{
 
         h2 {
-            font-size: 15px;    
+            font-size: 20px;    
         }
     }
 }
