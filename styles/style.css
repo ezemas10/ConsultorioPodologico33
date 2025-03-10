@@ -110,12 +110,17 @@ main{
 }
 
 .titulo2 {
-    border: 2px solid lightslategray;
+    border: 2px solid lightblue;
     border-radius: 8px;
     padding: 4px 10px;
     display: inline-block;
     max-width: 500px;
     margin: 0 auto 0 auto;
+    box-shadow: 0 5px 10px lightblue;
+}
+
+.titulo2 h2{
+    margin: 0;
 }
 
 .content-box{
@@ -406,11 +411,10 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 10px;
+    gap: 30px;
     max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 50px;
-    padding-top: 20px;
 }
 
 .content-service article{
@@ -418,9 +422,17 @@ main{
 }
 
 .content-service pagos{
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 0;
+}
+
+.pagos figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content-service patologias{
@@ -523,6 +535,21 @@ main{
 
 }
 
+.carrusel-propio{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.etiquetasabajo{
+    display: block;
+    position: static;
+}
+
+.etiquetasabajo p{
+    margin-bottom: 30px;
+}
+
+
             /* SERVICIOS */
 
 
@@ -544,6 +571,7 @@ h2 {
     font-weight: bold;
     font-family: "roboto", sans-serif;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 h3 {
@@ -574,26 +602,35 @@ p {
 }
 
 .imagenes2 {
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     padding: 5px;
 }
 
 .imagenes3 {
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
     padding: 5px;
-    margin-left: 5px;
     border-radius: 20px;
     box-shadow: 0 5px 10px lightslategray;
 }
 
 .imagenes4 {
-    width: 150px;
-    margin: 30px;
-    padding-left: 10px;
+    max-width: 150px;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .imagenes5 {
     width: 150px;
+}
+
+.imagenes6{
+    max-width: 250px;
+    min-width: 200px;
+    width: 100%;
+    height: auto;
 }
 
 article{
@@ -733,6 +770,14 @@ footer p {
             font-size: 20px;
         }
 
+        h5{
+            font-size: 15px;
+        }
+
+        p{
+            font-size: 10px;
+        }
+
         .content-service{
             flex-wrap: wrap;
             gap: 5px;
@@ -762,6 +807,11 @@ footer p {
         
         .precios li{
             text-align: center;
+        }
+
+        .etiquetasabajo{
+            display: block;
+            position: static;
         }
 
     }
