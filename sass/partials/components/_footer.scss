@@ -1,0 +1,45 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+/* FOOTER */
+
+footer{
+    border-top: 1px solid $color2;
+    margin-top: 40px;
+    background: linear-gradient(to bottom, $color2, $color4);
+    p {
+        font-size: 20px;
+        color: $color7;
+        text-align: center;
+        padding: 4px;
+        margin-bottom: 10px;
+    }
+}
+
+.foot-container {
+    @include flexboxes(row, space-between, center);
+    padding-right: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.logofooter {
+    width: 100%;
+    max-width: 550px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.icons {
+    width: 50%;
+    max-width: 110px;
+    margin-top: 20px;
+}
+
+.linkfoot{
+    @include flexboxes(row, space-between, center);
+    align-items: center;
+    margin-left: 100px;
+} 
+
+/* FOOTER */

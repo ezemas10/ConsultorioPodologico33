@@ -1,0 +1,70 @@
+/* GRID SOMOS  */
+
+.contenido-somos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    grid-template-areas: 
+        "img0-somos img0-somos"
+        "texto1-somos img1-somos"
+        "img2-somos texto2-somos"
+        "texto3-somos img3-somos";
+    max-width: 1000px;
+    margin: 0 auto;
+    .imagenes4{
+        margin: 30px;
+    }
+}
+
+[data-aos="fade-left"] {
+    transform: translate3d(25px, 0, 0);
+}
+
+.texto1-somos{
+    grid-area: texto1-somos;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.texto2-somos{
+    grid-area: texto2-somos;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto3-somos{
+    grid-area: texto3-somos;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.img0-somos{
+    grid-area: img0-somos;
+    display: flex;
+    justify-content: center;
+}
+
+.img1-somos{
+    grid-area: img1-somos;
+    display: flex;
+}
+
+.img2-somos{
+    grid-area: img2-somos;
+    display: flex;
+    justify-content: right;
+}
+
+.img3-somos{
+    grid-area: img3-somos;
+    display: flex;
+}
+
+.imagenes-somos{
+    width: 100%;
+    padding: 5px;
+}
+
+/* GRID SOMOS  */

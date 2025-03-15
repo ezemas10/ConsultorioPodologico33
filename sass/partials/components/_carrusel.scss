@@ -1,0 +1,24 @@
+.img-articulos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 100px;
+    figure{
+        display: flex;
+    }
+}
+
+.carrusel-propio{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.etiquetasabajo{
+    display: block;
+    position: static;
+    p{
+        margin-bottom: 30px;
+    }
+}

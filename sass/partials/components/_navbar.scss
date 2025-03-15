@@ -1,0 +1,56 @@
+@use '../utilities/variables' as *;
+
+/* ESTILADO NAV BOOTSTRAP */
+
+.navbar-estilopropio{
+    background-color: $color6;
+    border-bottom: 1px solid $color1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    a{
+        text-decoration: none;
+        color: $color5;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: "roboto", sans-serif;
+        &:hover{
+            color: $color2;
+            text-decoration: underline;
+        }
+    }   
+}
+
+.navbar-buttonpropio{
+    --bs-navbar-toggler-focus-width: 0rem;
+}
+
+.navbar-collapse-propia{
+    justify-content: flex-end;
+}
+
+.navegacionpropia{
+    gap: 10px;
+}
+
+.links-propios:focus, .links-propios:hover {
+    color: $color5;
+  }
+
+/* ESTILADO NAV BOOTSTRAP */
+
+
+/* HEADER */
+
+header li {
+    list-style: none;
+    text-align: right;
+    }
+    
+.logonav{
+max-width: 300px;
+margin-left: 5px;
+margin-bottom: 5px;
+margin-right: 5px;
+}
+
+/* HEADER */
