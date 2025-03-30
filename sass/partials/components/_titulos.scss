@@ -1,0 +1,41 @@
+@use '../utilities/mixins' as *;
+@use '../utilities/variables' as *;
+
+/* TITULOS Y CONTENEDORES */
+
+.logo-titulo{
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+.titulo-container {
+    @include flexboxes(column, center, center);
+    gap: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    p{
+        margin-top: 40px;
+    }
+}
+
+.titulo1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.titulo2 {
+    border: 2px solid $color2;
+    border-radius: 8px;
+    padding: 4px 10px;
+    display: inline-block;
+    max-width: 500px;
+    margin: 0 auto 0 auto;
+    box-shadow: 0 5px 10px $color2;
+    h2{
+        margin: 0;
+    }
+}
+
+/* TITULOS Y CONTENEDORES */

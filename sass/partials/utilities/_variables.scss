@@ -1,0 +1,25 @@
+@use 'sass:map';
+
+//Variables
+
+$color0:lightslategray;
+$color1:grey;
+$color2:lightblue;
+$color3:lightcyan;
+$color4:darkcyan;
+$color5:lightseagreen;
+$color6:white;
+$color7:black;
+
+//Variables
+
+//Maps
+
+$pantallas: (
+  cel: 450px,
+  pad: 600px,
+  pc: 750px,
+  hd: 1000px
+);
+
+//Maps

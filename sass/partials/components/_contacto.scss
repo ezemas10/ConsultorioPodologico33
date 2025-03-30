@@ -1,0 +1,46 @@
+@use '../utilities/variables' as *;
+
+/* CONTACT */
+
+.contenido-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        a{
+            &:hover {
+            outline: 2px solid $color5;
+            }
+        }   
+        p {
+            text-align: center;
+        }
+    }
+    article{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    h3{
+        text-align: center;
+    }
+    li{
+        text-align: center;
+        list-style: none;
+        margin-bottom: 5px;
+        margin-top: 20px;
+        font-family: "roboto", sans-serif;
+    }
+}
+
+.special{ 
+    font-size: 30px;
+    color:$color4
+}
+
+/* CONTACT */

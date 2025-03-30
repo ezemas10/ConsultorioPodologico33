@@ -1,0 +1,346 @@
+@use 'sass:map';
+@use '../utilities/variables' as *;
+
+/* MEDIA QUERIES */
+
+@media (max-width: map.get($pantallas, pc)) {
+
+    header{
+
+        a{
+            font-size: 15px;
+        }
+
+        .linksnav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            margin-left: 10px;
+        } 
+
+    }
+
+    body {
+
+        .content-title{
+            grid-area: content-title;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .contenido-somos {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "img0-somos" 
+                "texto1-somos" 
+                "img1-somos"
+                "texto2-somos"
+                "img2-somos"
+                "texto3-somos"
+                "img3-somos";
+        }
+
+        .texto1-somos{
+            text-align: left;
+        }
+        
+        .texto2-somos{
+            text-align: center;
+        }
+
+        .texto3-somos{
+            text-align: right;
+        }
+
+        .img0-somos{
+            justify-content: center;
+        }
+
+        .img1-somos{
+            justify-content: center;
+        }
+
+        .img2-somos{
+            justify-content: center;
+        }
+
+        .img3-somos{
+            justify-content: center;
+        }
+
+        .contenido-next {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                "texto1-next" 
+                "img1-next"
+                "texto2-next"
+                "img2-next";
+        }
+
+        .texto1-next{
+            text-align: center;
+        }
+        
+        .texto2-next{
+            text-align: center;
+        }
+
+        .img1-next{
+            justify-content: center;
+        }
+
+        .img2-next{
+            justify-content: center;
+        }
+
+        .imagenes-somos{
+            max-width: 250px;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+        }
+
+        h1{
+            font-size: 30px;
+        }
+
+        h2 {
+            font-size: 25px;
+        }
+
+        h3{
+            font-size: 20px;
+        }
+
+        h5{
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 15px;
+        }
+
+        .content-service{
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .patologias h3{
+            text-align: center;
+        }
+        
+        .precios h3{
+            text-align: center;
+        }
+
+        .pagos h3{
+            text-align: center;
+        }
+        
+        .patologias li{
+            text-align: center;
+            list-style: none;
+        }
+
+        .pagos li{
+            text-align: center;
+            list-style: none;
+        }
+        
+        .precios li{
+            text-align: center;
+        }
+
+        .etiquetasabajo{
+            display: block;
+            position: static;
+        }
+
+    }
+
+    footer {
+
+        .linkfoot{
+            margin-left: 75px ;
+        }
+
+        .logofooter {
+            width: 100%;
+            margin-left: 20px;
+        }
+
+        .icons {
+            max-width: 110px;
+            margin-top: 20px;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+    }
+    
+}
+
+
+@media (max-width: map.get($pantallas, pad)) {
+    
+    header{
+
+        a{
+            font-size: 10px;
+        }
+
+        .linksnav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+            margin-left: 15px;
+        } 
+
+    }
+    
+    
+    body {
+
+        .content-title{
+            justify-content: center;
+            text-align: center;
+        }
+
+        .content-ul{
+            justify-content: center;
+            list-style: none;
+            text-align: center;
+        }
+
+        .contenido-somos {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "img0-somos"
+                "texto1-somos" 
+                "img1-somos"
+                "texto2-somos"
+                "img2-somos"
+                "texto3-somos"
+                "img3-somos";
+        }
+
+        .texto1-somos{
+            text-align: center;
+        }
+        
+        .texto2-somos{
+            text-align: center;
+        }
+
+        .texto3-somos{
+            text-align: center;
+        }
+
+        .contenido-contact {
+            flex-wrap: wrap;
+        }
+
+        h1{
+            font-size: 25px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3{
+            font-size: 17px;
+        }
+        
+        .precios h3{
+            text-align: center;
+        }
+
+        .pagos h3{
+            text-align: center;
+        }
+        
+        .precios li{
+            text-align: center;
+        }
+
+        .label-estilopropio{
+            font-size: 0.80rem;
+        }
+
+        .button-propio{
+            font-size: 0.80rem;
+        }
+
+        p{
+            font-size: 15px;
+        }
+
+    }
+
+    footer {
+
+        .foot-container {
+            flex-direction: column;
+        }
+
+        .linkfoot{
+            margin-left: 15px ;
+            text-align: center;
+        }
+
+        .logofooter {
+            margin-left: 10px ;
+        }
+
+        .icons {
+            max-width: 30%;
+            margin-top: 20px;
+        }
+
+        h5 {
+            font-size: 17px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+    }
+
+}
+
+
+@media (max-width: map.get($pantallas, cel)) {
+
+    header{
+
+        .logonav{
+            max-width: 200px;
+            margin-left: 3px;
+            margin-bottom: 5px;
+            margin-right: 0px;
+        }
+    }
+
+    body{
+
+        h2 {
+            font-size: 20px;    
+        }
+    }
+}
