@@ -1,3 +1,5 @@
+@use '../utilities/extends' as *;
+
 /* GRID SOMOS  */
 
 .contenido-somos {
@@ -42,8 +44,7 @@
 
 .img0-somos{
     grid-area: img0-somos;
-    display: flex;
-    justify-content: center;
+    @extend .flexcenters;
 }
 
 .img1-somos{

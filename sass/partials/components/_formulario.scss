@@ -1,4 +1,5 @@
 @use '../utilities/variables' as *;
+@use '../utilities/extends' as *;
 
 .form-estilopropio{
     margin-bottom: 0px;
@@ -13,9 +14,8 @@
 }
 
 .formulario-content{
-    display: flex;
+    @extend .flexcenters;
     flex-direction: column;
-    justify-content: center;
     box-shadow: 0 5px 10px $color0;
     border-radius: 10px;
     padding: 10px;

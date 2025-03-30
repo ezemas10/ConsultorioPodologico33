@@ -1,4 +1,5 @@
 @use '../utilities/variables' as *;
+@use '../utilities/extends' as *;
 
 
 //Boxes
@@ -14,10 +15,9 @@
 //Carrusel
 
 .img-articulos{
-    display: flex;
+    @extend .flexcenters;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 35px;
     margin-top: 100px;
     figure{

@@ -1,11 +1,11 @@
 @use '../utilities/mixins' as *;
+@use '../utilities/extends' as *;
 
 /* SERVICIOS */
 
 .content-service{
-    display: flex;
+    @extend .flexaround;
     flex-direction: row;
-    justify-content: space-around;
     gap: 30px;
     max-width: 1000px;
     margin: 0 auto;
@@ -17,8 +17,7 @@
 
 .pagos {
     figure{
-        display: flex;
-        justify-content: center;
+        @extend .flexcenters;
         align-items: center;
         margin-top: 30px;
     }
@@ -52,11 +51,10 @@
 }
 
 .modos{
-    display: flex;
+    @extend .flexaround;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
     gap: 35px;
     max-width: 1000px;
     margin: 0 auto;

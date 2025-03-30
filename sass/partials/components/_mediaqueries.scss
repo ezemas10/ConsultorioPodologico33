@@ -3,7 +3,7 @@
 
 /* MEDIA QUERIES */
 
-@media (max-width: map.get($pantallas, pc)) {
+@media (max-width: map.get($pantallas , pc )) {
 
     header{
 
@@ -192,7 +192,7 @@
 }
 
 
-@media (max-width: map.get($pantallas, pad)) {
+@media (max-width: map.get($pantallas , pad )) {
     
     header{
 
@@ -325,7 +325,7 @@
 }
 
 
-@media (max-width: map.get($pantallas, cel)) {
+@media (max-width: map.get($pantallas , cel )) {
 
     header{
 

@@ -1,12 +1,13 @@
 @use '../utilities/variables' as *;
+@use '../utilities/extends' as *;
+
 
 /* CONSULTORIO */
 
 .consultorio-content{
-    display: flex;
+    @extend .flexcenters;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
     figure{
         display: flex;

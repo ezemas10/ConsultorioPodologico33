@@ -1,15 +1,14 @@
 @use '../utilities/variables' as *;
+@use '../utilities/extends' as *;
 
 /* CONTACT */
 
 .contenido-contact{
-    display: flex;
+    @extend .flexcenters;
     flex-direction: row;
-    justify-content: center;
     gap: 20px;
     div{
-        display: flex;
-        justify-content: center;
+        @extend .flexcenters;
         align-items: center;
         flex-direction: column;
         a{
